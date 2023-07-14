@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "author": "shikm <shikm@senlianshop.com>",
+  "scripts": {
+    "dev": "cross-env max dev",
+    "dev:test": "cross-env UMI_ENV=test max dev",
+    "build": "cross-env max build",
+    "build:test": "cross-env UMI_ENV=test max build",
+    "format": "prettier --cache --write .",
+    "prepare": "husky install",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev",
+    "lint:fix": "max lint --fix"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "@ant-design/pro-components": "^2.6.4",
+    "@umijs/max": "^4.0.72",
+    "antd": "^5.7.0"
+  },
+  "devDependencies": {
+    "@ant-design/pro-layout": "^7.16.0",
+    "@emotion/css": "^11.11.2",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.5",
+    "typescript": "^4.9.5"
+  }
+}
