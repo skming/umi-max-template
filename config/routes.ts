@@ -31,19 +31,21 @@ export default [
     icon: 'home',
     name: 'welcome',
     component: './Home/index',
-    access: ['admin'],
+    access: 'admin',
   },
   {
     path: '/access',
     name: '权限',
     icon: 'crown',
-    component: './Access'
+    component: './Access',
   },
   {
     path: '/table',
     name: '表格',
     icon: 'table',
     component: './Table',
+    // 隐藏自己和子菜单
+    hideInMenu: true,
   },
   {
     path: '*',

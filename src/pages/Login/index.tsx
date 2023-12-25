@@ -54,8 +54,8 @@ const Login: React.FC = () => {
     messageApi.success('获取验证码成功');
   }
 
-  const onFinish = (values: any) => {
-    console.log(values);
+  const onFinish = async (values: any) => {
+    await console.log(values);
     history.replace({
       pathname: redirectUrl
     })
